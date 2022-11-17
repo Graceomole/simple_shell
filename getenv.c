@@ -1,5 +1,4 @@
 #include "shell.h"
-
 /**
 * get_environ - returns the string array copy of our environ
 * @info: Structure containing potential arguments. Used to maintain
@@ -29,7 +28,6 @@ int _unsetenv(info_t *info, char *var)
 list_t *node = info->env;
 size_t i = 0;
 char *p;
-
 if (!node || !var)
 return (0);
 

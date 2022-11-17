@@ -1,12 +1,10 @@
 #include "shell.h"
-
 /**
 * _erratoi - converts a string to an integer
 * @s: the string to be converted
 * Return: 0 if no numbers in string, converted number otherwise
 *       -1 on error
 */
-
 int _erratoi(char *s)
 {
 int i = 0;
@@ -21,14 +19,13 @@ if (s[i] >= '0' && s[i] <= '9')
 result *= 10;
 result += (s[i] - '0');
 if (result > INT_MAX)
-return (-1);
+	return (-1);
 }
 else
 return (-1);
 }
 return (result);
 }
-
 /**
 * print_error - prints an error message
 * @info: the parameter & return info struct
@@ -36,7 +33,6 @@ return (result);
 * Return: 0 if no numbers in string, converted number otherwise
 *        -1 on error
 */
-
 void print_error(info_t *info, char *estr)
 {
 _eputs(info->fname);
@@ -55,7 +51,6 @@ _eputs(estr);
 *
 * Return: number of characters printed
 */
-
 int print_d(int input, int fd)
 {
 int (*__putchar)(char) = _putchar;
@@ -96,7 +91,6 @@ return (count);
 *
 * Return: string
 */
-
 char *convert_number(long int num, int base, int flags)
 {
 static char *array;
@@ -131,7 +125,6 @@ return (ptr);
 *
 * Return: Always 0;
 */
-
 void remove_comments(char *buf)
 {
 int i;

@@ -21,7 +21,6 @@ char *_getenv(info_t *info, const char *name)
 {
 list_t *node = info->env;
 char *p;
-
 while (node)
 {
 p = starts_with(node->str, name);
@@ -49,6 +48,7 @@ if (_setenv(info, info->argv[1], info->argv[2]))
 return (0);
 return (1);
 }
+
 /**
 * _myunsetenv - Remove an environment variable
 * @info: Structure containing potential arguments. Used to maintain
@@ -69,6 +69,7 @@ _unsetenv(info, info->argv[i]);
 
 return (0);
 }
+
 /**
 * populate_env_list - populates env linked list
 * @info: Structure containing potential arguments. Used to maintain
