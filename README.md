@@ -1,6 +1,6 @@
 # 0x16. C - Simple Shell
 
-This project is an implementation of the shell created as the final project for the C code sprint at ALX Africa.
+This project is an execution of the shell created as the final project for the C code sprint at ALX Africa.
 
 ## Description
 
@@ -20,3 +20,4 @@ Our shell was built and tested on Ubuntu 14.04 LTS
 
 - [Samuel Nwachukwu](https://github.com/nwachukwusamuel)
 - [Grace Omoleye](https://github.com/graceomole)
+
